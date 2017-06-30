@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:imagecontrol="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:orientation="vertical"
+        android:showDividers="middle"
+        android:background="@drawable/gradient_red_bg">
+        <com.wezley.uploadImage.view.RoundedImageView
+            android:id="@+id/activity_main_rmv"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="centerCrop"
+            android:layout_gravity="center"
+            imagecontrol:border_inside_color="#fff7f2e9"
+            imagecontrol:border_outside_color="#ffd5d1c8"
+            imagecontrol:border_thickness="1dp"
+            app:corner_radius="40dp"
+            app:mutate_background="true"
+            app:oval="false"
+            android:src="@drawable/default_img"
+          />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="Wezly"
+            android:textColor="@color/white"
+            android:textSize="@dimen/txt_large"
+            />
+    </LinearLayout>
+
+
+</LinearLayout>

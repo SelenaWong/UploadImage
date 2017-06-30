@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_horizontal"
+   >
+ 	   <LinearLayout 
+ 	    android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:paddingLeft="20dp"
+		android:paddingRight="20dp"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        >
+ 	    <TextView
+ 	        android:id="@+id/activity_usercenter_takephotoTv"
+ 	        android:layout_width="match_parent"
+ 	        android:layout_height="44dip"
+	 	    android:gravity="center"
+ 	        android:text="@string/title_takephoto"
+ 	        android:textSize="@dimen/txt_medium"
+ 	        android:textColor="@color/txt_dark_black"
+			android:background="@drawable/corner_white_bg"/>
+
+ 	    <TextView
+ 	        android:id="@+id/activity_usercenter_choosepictureTv"
+ 	        android:layout_width="match_parent"
+ 	        android:layout_height="44dip"
+			android:layout_marginTop="5dp"
+	 	    android:gravity="center"
+ 	        android:text="@string/title_choosefromcamera"
+ 	        android:textSize="@dimen/txt_medium"
+ 	        android:textColor="@color/txt_dark_black"
+			android:background="@drawable/corner_white_bg"/>
+
+ 	    <TextView
+ 	        android:id="@+id/activity_usercenter_cancelchangeimageTv"
+ 	        android:layout_width="match_parent"
+ 	        android:layout_height="44dip"
+			android:layout_marginTop="10dp"
+	 	    android:gravity="center"
+ 	        android:text="@string/cancel"
+ 	        android:textSize="@dimen/txt_medium"
+ 	        android:textColor="@color/txt_dark_black"
+			android:background="@drawable/corner_white_bg"/>
+		</LinearLayout>
+</RelativeLayout>
+

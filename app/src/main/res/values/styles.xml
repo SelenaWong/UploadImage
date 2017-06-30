@@ -1,0 +1,132 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+        <style name="Theme.MyDialog" parent="@style/Theme.AppCompat.Light.Dialog">
+            <item name="windowActionBar">false</item>
+            <item name="windowNoTitle">true</item>
+        </style>
+        <style name="ActionSheetStyleiOS7">
+            <item name="actionSheetBackground">@android:color/transparent</item>
+            <item name="cancelButtonBackground">@drawable/slt_as_ios7_cancel_bt</item>
+            <item name="otherButtonTopBackground">@drawable/slt_as_ios7_other_bt_top</item>
+            <item name="otherButtonMiddleBackground">@drawable/slt_as_ios7_other_bt_middle</item>
+            <item name="otherButtonBottomBackground">@drawable/slt_as_ios7_other_bt_bottom</item>
+            <item name="otherButtonSingleBackground">@drawable/slt_as_ios7_other_bt_single</item>
+            <item name="cancelButtonTextColor">#1E82FF</item>
+            <item name="otherButtonTextColor">#1E82FF</item>
+            <item name="actionSheetPadding">10dp</item>
+            <item name="otherButtonSpacing">0dp</item>
+            <item name="cancelButtonMarginTop">10dp</item>
+            <item name="actionSheetTextSize">@dimen/txt_medium</item>
+        </style>
+        <!-- Base application theme. -->
+        <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+            <!-- Customize your theme here. -->
+            <item name="colorPrimary">@color/colorPrimary</item>
+            <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+            <item name="colorAccent">@color/colorAccent</item>
+            <item name="windowActionBar">false</item>
+            <item name="windowNoTitle">true</item>
+            <item name="actionSheetStyle">@style/ActionSheetStyleiOS7</item>
+        </style>
+        <!--Toolbar的样式配置 begin-->
+        <!-- toolbar菜单文字尺寸 -->
+        <style name="ToolbarMenuTextSize" parent="@style/TextAppearance.AppCompat.Menu">
+            <item name="android:textSize">14sp</item>
+        </style>
+        <!-- toolbar菜单样式 -->
+        <style name="ToolbarTheme" parent="@style/ThemeOverlay.AppCompat.ActionBar">
+            <item name="actionMenuTextColor">@android:color/white</item>
+            <item name="actionMenuTextAppearance">@style/ToolbarMenuTextSize</item>
+            <!--<item name="android:colorBackground"></item>也可以设置背景色以及menu中的其他属性-->
+            <item name="actionOverflowMenuStyle">@style/OverflowMenuStyle</item>
+            <item name="android:itemBackground">@color/colorPrimary</item>
+            <item name="android:layout_marginRight">10dp</item>
+            <item name="android:textColor">@android:color/white</item>
+        </style>
+        <!--设置菜单popup出现位置在toolbar的下方-->
+        <style name="OverflowMenuStyle" parent="Widget.AppCompat.Light.PopupMenu.Overflow">
+            <item name="overlapAnchor">false</item>  <!--设置不覆盖锚点-->
+        </style>
+        <!-- toolbar主标题样式 -->
+        <style name="ToolbarTitle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Title">
+            <item name="android:textSize">17sp</item>
+            <item name="android:textColor">@android:color/white</item>
+            <item name="android:textColorPrimary">@android:color/white</item>
+        </style>
+        <!--toolbar副标题样式-->
+        <style name="ToolbarSubTitle" parent="@style/TextAppearance.Widget.AppCompat.Toolbar.Subtitle">
+            <item name="android:textSize">13sp</item>
+            <item name="android:textColor">@android:color/darker_gray</item>
+        </style>
+        <!--Toolbar的样式配置 end-->
+        <style name="MyAlertDialogStyle">
+            <item name="android:windowFrame">@null</item>
+            <item name="android:windowIsFloating">true</item>
+            <item name="android:windowIsTranslucent">true</item>
+            <item name="android:windowNoTitle">true</item>
+            <item name="android:windowBackground">@android:color/transparent</item>
+            <item name="android:windowEnableSplitTouch">false</item>
+            <item name="android:splitMotionEvents">false</item>
+        </style>
+
+        <style name="MyFullDialogStyle">
+            <item name="android:windowFrame">@null</item>
+            <item name="android:windowIsFloating">true</item>
+            <item name="android:windowIsTranslucent">true</item>
+            <item name="android:windowNoTitle">true</item>
+            <item name="android:windowBackground">@android:color/transparent</item>
+            <item name="android:windowEnableSplitTouch">false</item>
+            <item name="android:splitMotionEvents">false</item>
+            <item name="android:windowFullscreen">true</item>
+        </style>
+        <style name="DialogStyleCenter" parent="@android:style/Theme.Holo.Dialog.NoActionBar">
+            <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+            <item name="android:windowFrame">@null</item>
+            <item name="android:windowIsFloating">false</item>
+            <item name="android:windowIsTranslucent">true</item>
+            <item name="android:windowNoTitle">true</item>
+            <item name="android:windowBackground">@android:color/transparent</item>
+            <item name="android:backgroundDimEnabled">true</item>
+            <item name="android:windowCloseOnTouchOutside">false</item>
+            <item name="android:windowEnableSplitTouch">false</item>
+            <item name="android:splitMotionEvents">false</item>
+        </style>
+
+        <style name="MyDialogStyleBottom" >
+            <item name="android:windowFrame">@null</item>
+            <item name="android:windowIsFloating">true</item>
+            <item name="android:windowIsTranslucent">true</item>
+            <item name="android:windowNoTitle">true</item>
+            <item name="android:windowBackground">@android:color/transparent</item>
+            <item name="android:backgroundDimEnabled">true</item>
+            <item name="android:windowContentOverlay">@null</item>
+            <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        </style>
+        <style name="AnimBottom" parent="@android:style/Animation">
+            <item name="android:windowEnterAnimation">@anim/push_bottom_in</item>
+            <item name="android:windowExitAnimation">@anim/push_bottom_out</item>
+        </style>
+        <style name="DialogStyleBottom" parent="android:Theme.Dialog">
+            <item name="android:windowAnimationStyle">@style/AnimBottom</item>
+            <item name="android:windowFrame">@null</item><!-- 边框 -->
+            <item name="android:windowIsFloating">false</item><!-- 是否浮现在activity之上 -->
+            <item name="android:windowIsTranslucent">true</item><!-- 半透明 -->
+            <item name="android:windowNoTitle">true</item><!-- 无标题 -->
+            <item name="android:windowBackground">@android:color/transparent</item><!-- 背景透明 -->
+            <item name="android:backgroundDimEnabled">true</item><!-- 模糊 -->
+            <item name="android:windowCloseOnTouchOutside">true</item>
+        </style>
+
+
+        <!-- CropLib-->
+        <style tools:ignore="NewApi" name="CustomTheme" parent="android:Theme.DeviceDefault">
+            <item name="cropImageStyle">@style/Widget.CropImageView</item>
+        </style>
+
+        <style name="Widget.CropImageView" parent="android:Widget">
+            <item name="showThirds">true</item>
+            <item name="showCircle">false</item>
+            <item name="showHandles">always</item>
+            <item name="highlightColor">@color/highlight</item>
+        </style>
+
+</resources>
